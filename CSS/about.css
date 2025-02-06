@@ -1,0 +1,176 @@
+/* General Section Styles */
+.vision-mission-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* For responsiveness */
+  }
+  
+  .card {
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 450px;
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+  
+  /* Icon Styles */
+  .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 3px solid;
+    border-radius: 50%;
+    margin: 0 auto -30px; /* Position above card */
+    z-index: 1;
+    margin-top: -50px;
+  }
+  
+  /* Individual Card Styling */
+  .vision-card {
+    border-color: #631FF2; /* Purple border */
+  }
+  
+  .vision-card .icon {
+    border-color: #631FF2;
+  }
+  
+  .mission-card {
+    border-color: #ED7115; /* Orange border */
+  }
+  
+  .mission-card .icon {
+    border-color: #ED7115;
+  }
+  
+  /* Divider Styling */
+  .divider {
+    width: 60px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .vision-divider {
+    background-color: #631FF2;
+  }
+  
+  .mission-divider {
+    background-color: #ED7115;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vision-mission-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  
+/* Section history Styling */
+.history-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Intro Line */
+.intro-line {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Image Styling */
+.image-container {
+  margin: 0 auto 30px;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Styling */
+.content p {
+  color: #000000;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.content h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.content ul {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.content ul li {
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .content p, .content ul li {
+    font-size: 14px;
+  }
+
+  .image-container img {
+    width: 100%;
+    border-radius: 4px;
+  }
+}

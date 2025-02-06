@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  .banner{
+    width: 1080px;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .contact-form h1 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+  }
+  
+  .contact-form h1 span {
+    color: #FF00FF;
+  }
+  
+  .contact-form p {
+    margin: 0 0 20px;
+    color: #666;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background: #FF00FF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #cc00cc;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .contact-info div {
+    text-align: center;
+  }
+  
+  .contact-info i {
+    font-size: 1.5rem;
+    color: #FF00FF;
+  }
+  
+  .contact-info p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Map Section */
+  .contact-map {
+    flex: 1;
+    background: #6633FF;
+  }
+  
+  .contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+    }
+  
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  

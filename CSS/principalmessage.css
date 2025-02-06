@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('Asset/principalbg.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Section Container */
+  .principal-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 2px yellow;
+    
+
+    border-image-source: linear-gradient(180deg, #FACC15 0%, #FFFFFF 100%);
+    
+      
+  }
+  
+  /* Message Box */
+  .message-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: left;
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    border-image-source: linear-gradient(180deg, #FACC15 0%, #FFFFFF 100%) 5px;
+  }
+  
+  /* Principal's Photo */
+  .photo-container {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    overflow: hidden;
+  }
+  
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Heading */
+  .message-box h2 {
+    margin-top: 80px; /* Space below photo */
+    font-size: 1.8rem;
+    color: #333;
+    border-left: 4px solid #f39c12;
+    padding-left: 10px;
+  }
+  
+  /* Text */
+  .message-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .photo-container {
+      top: -50px;
+      width: 100px;
+      height: 100px;
+    }
+  
+    .message-box {
+      padding: 20px;
+    }
+  
+    .message-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .message-box p {
+      font-size: 0.9rem;
+    }
+  }
+  

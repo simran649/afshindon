@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  .card-section {
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Card Style */
+  .card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align the content */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px); /* Two cards per row */
+    max-width: 400px;
+    text-align: center; /* Center text alignment */
+  }
+  
+  .card-center {
+    width: 100%;
+    max-width: 400px; /* Card centered in the third row */
+  }
+  
+  /* Adjust Image Container */
+  .card-image {
+    width: 100%; /* Make image fill the container */
+    max-width: 180px; /* Larger image container for mobile */
+    height: 180px; /* Keep it proportional */
+    border-radius: 50%; /* Keeps the image circular */
+    object-fit: cover; /* Ensure the image fits without distortion */
+    margin-bottom: 10px; /* Add space below the image */
+  }
+  
+  /* Card Content */
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align text */
+  }
+  
+  .name {
+    font-size: 16px; /* Adjust font size for mobile */
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px; /* Add spacing above */
+  }
+  
+  .designation-airforce {
+    font-size: 14px;
+    color: #555 !important;
+    margin-top: 5px;
+  }
+  
+  .designation-school {
+    font-size: 14px;
+    color: #777 !important;
+    margin-top: 3px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Full-width cards on smaller screens */
+    }
+  
+    .card-container {
+      flex-direction: column; /* Stack cards vertically */
+    }
+  
+    .card-image {
+      max-width: 200px; /* Increase image size for medium screens */
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .card-image {
+      max-width: 220px; 
+      height: 220px; 
+    }
+  
+    .name {
+      font-size: 14px; 
+    }
+  
+    .designation-airforce, .designation-school {
+      font-size: 12px; 
+    }
+  }
+  
+  

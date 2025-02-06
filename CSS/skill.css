@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background: #ffffff;
+  }
+  
+  /* Banner */
+  .banner {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #000000;
+  }
+  
+  /* Updated Styles for Content Section */
+  .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  
+  .content-left,
+  .content-right {
+    flex: 1;
+    max-width: 50%; /* Ensure each section takes 50% of the page */
+  }
+  
+  .content-left img,
+  .content-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 1024px) {
+    .content-left,
+    .content-right {
+      max-width: 100%; /* Full width for smaller devices */
+      flex: none;
+    }
+  
+    .content-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content-left img,
+    .content-right img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .content-section p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .content-section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .content-section p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Gallery Section */
+  /* Gallery Section */
+  .gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    gap: 20px;
+  }
+  
+  .gallery-img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .modal-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  .modal-controls button {
+    background: #D924B1;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .modal-controls button:hover {
+    background: #631FF2;
+  }
+  
+  .gallery-text {
+    background: linear-gradient(180deg, rgba(217, 36, 177, 0.9) 0%, rgba(99, 31, 242, 0.9) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+  
+  /* Enhanced Responsiveness */
+  
+  /* Medium devices (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr); /* 3 images per row for tablets */
+    }
+  
+    .gallery-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .modal-content {
+      max-width: 95%;
+      max-height: 80%;
+    }
+  
+    .close {
+      font-size: 25px;
+    }
+  }
+  
+  /* Small devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row for mobile */
+    }
+  
+    .gallery-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  }
+  
+  /* Extra small devices (max-width: 576px) */
+  @media (max-width: 576px) {
+    .gallery {
+      grid-template-columns: repeat(1, 1fr); /* 1 image per row for smaller devices */
+    }
+  
+    .gallery-section h2 {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      font-size: 0.8rem;
+    }
+  
+    .modal-controls button {
+      padding: 3px 8px;
+      font-size: 0.8rem;
+    }
+  }
